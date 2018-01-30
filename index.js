@@ -3,7 +3,7 @@ const app = express();
 //asks server to find the public port and use that, ELSE port 3000
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, resp)=>{
+app.get("/hello", (req, resp)=>{
         resp.end("Welcome to my app");
         });
 
